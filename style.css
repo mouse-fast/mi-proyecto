@@ -1,17 +1,241 @@
-/* Estilo para los botones dentro de las mini tarjetas del banner */
-.add-cart-mini {
-    margin-top: 8px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cabecera */
+.main-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5%;
+    font-size: 12px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+.top-links a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.top-links a:hover {
+    text-decoration: underline;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+.logo {
+    font-size: 24px;
+    color: #0064d2;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    width: 50%;
+    border: 2px solid #0064d2;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box button {
+    width: 20%;
     background-color: #0064d2;
     color: white;
     border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 11px;
     font-weight: bold;
-    width: 100%;
+    cursor: pointer;
 }
 
-.add-cart-mini:hover {
-    background-color: #004b9b;
+.categories-nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px 5%;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+}
+
+.categories-nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+.categories-nav a:hover {
+    color: #0064d2;
+    border-bottom: 2px solid #0064d2;
+}
+
+/* Banner Principal */
+.hero-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0064d2, #3893f9);
+    color: white;
+    margin: 20px 5%;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.hero-btn {
+    background: white;
+    color: #0064d2;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-products {
+    display: flex;
+    gap: 15px;
+}
+
+.mini-card {
+    background: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 6px;
+    width: 140px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 11px;
+}
+
+.new-price {
+    color: #e53935;
+    font-weight: bold;
+}
+
+/* Contenedor y Productos */
+.container {
+    padding: 20px 5%;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-title a {
+    color: #0064d2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    position: relative;
+    text-align: center;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #e53935;
+    color: white;
+    padding: 3px 6px;
+    font-size: 11px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.product-card h4 {
+    margin: 15px 0 10px 0;
+    font-size: 16px;
+}
+
+.price {
+    margin-bottom: 15px;
+}
+
+.price .old {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+.price .new {
+    color: #e53935;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.add-cart {
+    background: #0064d2;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.add-cart:hover {
+    background: #004b9b;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 40px;
+    font-size: 13px;
 }

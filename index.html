@@ -1,4 +1,41 @@
-<!-- Banner Principal con productos interactivos -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi E-Business - Tienda Online Estilo Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabecera Superior tipo Marketplace -->
+    <header class="main-header">
+        <div class="top-bar">
+            <span>¡Bienvenido! <a href="#">Identifícate o regístrate</a></span>
+            <div class="top-links">
+                <a href="#">Ayuda</a>
+                <a href="#">Vender</a>
+                <a href="#" id="cart-btn">Carrito (0)</a>
+            </div>
+        </div>
+        
+        <div class="search-section">
+            <h1 class="logo">mi-proyecto</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar cualquier artículo, marca o tecnología...">
+                <button>Buscar</button>
+            </div>
+        </div>
+
+        <nav class="categories-nav">
+            <a href="#inicio">Portada</a>
+            <a href="#ofertas">Ofertas del día</a>
+            <a href="#productos">Electrónica</a>
+            <a href="#hogar">Hogar y Jardín</a>
+            <a href="#deportes">Deportes</a>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
     <section id="inicio" class="hero-banner">
         <div class="hero-text">
             <h2>Dieta más sana con la freidora de aire</h2>
@@ -9,17 +46,56 @@
             <div class="mini-card">
                 <p><strong>BEAR freidora de aire 3.5L</strong></p>
                 <span class="old-price">69.99€</span> <span class="new-price">33.99€</span>
-                <button class="add-cart-mini" onclick="agregarAlCarrito()">Añadir</button>
             </div>
             <div class="mini-card">
                 <p><strong>BEAR Freidora de Aire 5.5L</strong></p>
                 <span class="old-price">109.99€</span> <span class="new-price">59.49€</span>
-                <button class="add-cart-mini" onclick="agregarAlCarrito()">Añadir</button>
             </div>
             <div class="mini-card">
                 <p><strong>Xiaomi G9 Aspirador portátil</strong></p>
                 <span class="old-price">175€</span> <span class="new-price">148.75€</span>
-                <button class="add-cart-mini" onclick="agregarAlCarrito()">Añadir</button>
             </div>
         </div>
     </section>
+
+    <!-- Sección de Ofertas y Productos -->
+    <main class="container">
+        <section id="ofertas" class="section-title">
+            <h3>Ofertas del día</h3>
+            <a href="#">Ver todos &rarr;</a>
+        </section>
+
+        <div class="product-grid" id="productos">
+            <div class="product-card">
+                <div class="badge">-50%</div>
+                <h4>Xiaomi Redmi 9AT</h4>
+                <p class="price"><span class="old">$18.00</span> <span class="new">$9.00</span></p>
+                <button class="add-cart" onclick="agregarAlCarrito()">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <div class="badge">-30%</div>
+                <h4>Poco X3 Pro</h4>
+                <p class="price"><span class="old">$289.00</span> <span class="new">$199.00</span></p>
+                <button class="add-cart" onclick="agregarAlCarrito()">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <h4>Robot Aspirador Inteligente</h4>
+                <p class="price"><span class="new">$120.00</span></p>
+                <button class="add-cart" onclick="agregarAlCarrito()">Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <h4>V2000 Car Battery Starter</h4>
+                <p class="price"><span class="new">$85.50</span></p>
+                <button class="add-cart" onclick="agregarAlCarrito()">Añadir al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Mi E-Business - Proyecto Integrador Académico</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
