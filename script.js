@@ -1,11 +1,10 @@
 let contadorCarrito = 0;
 
-function agregarAlCarrito(nombreProducto) {
+function agregarAlCarrito() {
     contadorCarrito++;
-    alert(`¡Has añadido "${nombreProducto}" al carrito con éxito!`);
+    const botonCarrito = document.getElementById("cart-btn");
+    botonCarrito.textContent = `Carrito (${contadorCarrito})`;
     
-    const botonCarrito = document.getElementById('cart-btn');
-    if (botonCarrito) {
-        botonCarrito.innerText = `Carrito (${contadorCarrito})`;
-    }
+    // Alerta visual de confirmación para la demostración
+    alert("¡Producto añadido al carrito con éxito! Simulación de compra en curso.");
 }
